@@ -39,7 +39,7 @@ const Navbar = () => {
       </div>
       <nav className="hidden sm:flex items-center sm:gap-6 lg:gap-8">
         {LINKS.map(({ title, href }) => (
-          <Link href={href} className="text-black/60">
+          <Link href={href} className="text-black/60" key={title}>
             {title}
           </Link>
         ))}
