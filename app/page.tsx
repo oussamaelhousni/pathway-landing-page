@@ -2,7 +2,9 @@ import Banner from "@/components/banner";
 import Hero from "@/components/hero";
 import Logoticker from "@/components/logo-ticker";
 import Navbar from "@/components/navbar";
+import Pricing from "@/components/pricing";
 import ProductShowCase from "@/components/product-showcase";
+import Testimonials from "@/components/testimonials";
 
 export default function Home() {
   return (
@@ -12,6 +14,7 @@ export default function Home() {
       <Hero />
       <Logoticker />
       <ProductShowCase />
+      <Pricing />
     </main>
   );
 }

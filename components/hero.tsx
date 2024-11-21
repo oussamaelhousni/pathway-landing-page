@@ -8,7 +8,7 @@ import Button from "./button";
 import LinkWithArrow from "./link-with-arrow";
 const Hero = () => {
   return (
-    <section className="py-[3rem] bg-gradient-to-tr from-blue-500/30 from 50%% via-blue-200/50 via-50% to-70% to-white overflow-x-hidden">
+    <section className="py-[3rem] bg-gradient-to-tr from-blue-500/30 from 50%% via-blue-200/50 via-50% to-70% to-white overflow-hidden">
       <div className="container mx-auto mt-20 flex flex-col gap-16 md:mt-0 md:flex-row md:items-center">
         <div className="space-y-8 sm:space-y-12 sm:w-[470px] lg:w-[600px]">
           <div className="text-sm border border-black/10 px-2 py-1 rounded-lg w-fit ">
