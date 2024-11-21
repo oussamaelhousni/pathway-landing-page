@@ -8,17 +8,17 @@ import Button from "./button";
 import LinkWithArrow from "./link-with-arrow";
 const Hero = () => {
   return (
-    <section className="py-[3rem] bg-gradient-to-tr from-blue-500/30 from 50%% via-blue-200/50 via-50% to-70% to-white">
-      <div className="container mx-auto mt-20 flex flex-col gap-16 sm:mt-0 sm:flex-row sm:items-center">
+    <section className="py-[3rem] bg-gradient-to-tr from-blue-500/30 from 50%% via-blue-200/50 via-50% to-70% to-white overflow-x-hidden">
+      <div className="container mx-auto mt-20 flex flex-col gap-16 md:mt-0 md:flex-row md:items-center">
         <div className="space-y-8 sm:space-y-12 sm:w-[470px] lg:w-[600px]">
           <div className="text-sm border border-black/10 px-2 py-1 rounded-lg w-fit ">
             Verion 2.0 here
           </div>
-          <h1 className="text-5xl font-semibold bg-gradient-to-b from-black to-[#001E7F] text-transparent bg-clip-text sm:text-6xl">
+          <h1 className="text-5xl font-semibold bg-gradient-to-b from-black to-[#001E7F] text-transparent bg-clip-text md:text-7xl">
             Pathway to productivity
           </h1>
 
-          <p className="text-[#010D3E] sm:text-lg">
+          <p className="text-[#010D3E] md:text-lg">
             Celebrate the joy of accomplishment with an app designed to track
             your progress, motivate your efforts, and celebrate your successes.
           </p>
@@ -28,22 +28,24 @@ const Hero = () => {
             <LinkWithArrow href="/learn">Learn More</LinkWithArrow>
           </div>
         </div>
-        <div className="relative grow mt-8 sm:h-[650px]">
+        <div className="relative md:flex-1 mt-8 md:h-[648px]">
           <Image
             src={cylinder}
             alt="cylandre"
-            className="absolute max-w-none hidden sm:block !w-[220px] sm:-left-[200px] l:-left-12 xl:-left-16 -top-[60px]"
+            className="hidden md:block md:absolute md:-left-32 md:-top-12"
+            width={220}
           />
           <Image
             src={heroImage}
             alt="her image"
-            className="max-w-[80%] mx-auto sm:max-w-none sm:mx-0 sm:h-full sm:w-auto sm:absolute sm:top-0 sm:-left-12 xl:left-auto xl:right-12 lg:mx-0"
+            className="md:block md:absolute md:max-w-none md:h-full md:w-auto xl:left-1/2 xl:-translate-x-1/3"
           />
 
           <Image
             src={noodlze}
             alt="nooodlze"
-            className="absolute max-w-none w-[220px] -bottom-24 -right-6"
+            className="hidden lg:block lg:absolute lg:-bottom-[200px] lg:left-[250px] xl:left-[648px] rotate-[30deg]"
+            width={220}
           />
         </div>
       </div>
