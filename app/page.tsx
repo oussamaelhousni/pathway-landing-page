@@ -15,6 +15,7 @@ export default function Home() {
       <Logoticker />
       <ProductShowCase />
       <Pricing />
+      <Testimonials />
     </main>
   );
 }
