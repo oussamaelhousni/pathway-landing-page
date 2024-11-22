@@ -1,5 +1,6 @@
 import Banner from "@/components/banner";
 import CallToAction from "@/components/call-to-action";
+import Footer from "@/components/footer";
 import Hero from "@/components/hero";
 import Logoticker from "@/components/logo-ticker";
 import Navbar from "@/components/navbar";
@@ -18,6 +19,7 @@ export default function Home() {
       <Pricing />
       <Testimonials />
       <CallToAction />
+      <Footer />
     </main>
   );
 }
