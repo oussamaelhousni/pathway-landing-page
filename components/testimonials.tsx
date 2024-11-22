@@ -95,7 +95,7 @@ function Testimonials() {
             <div className="tag">Testimonials</div>
           </div>
           <h2 className="title">Exceptional service!</h2>
-          <div className="text-center text-lg mt-4">
+          <div className="text-center text-[22px] leading-[30px] tracking-tight text-[#010d3e] mt-5">
             Their customer support is unmatched. I had a few questions, and they
             took the time to explain everything clearly and patiently.
           </div>

@@ -1,4 +1,5 @@
 import Banner from "@/components/banner";
+import CallToAction from "@/components/call-to-action";
 import Hero from "@/components/hero";
 import Logoticker from "@/components/logo-ticker";
 import Navbar from "@/components/navbar";
@@ -16,6 +17,7 @@ export default function Home() {
       <ProductShowCase />
       <Pricing />
       <Testimonials />
+      <CallToAction />
     </main>
   );
 }
