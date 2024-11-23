@@ -1,11 +1,24 @@
-import React from "react";
+"use client";
+import React, { useRef } from "react";
 import Image from "next/image";
 import productImage from "@/assets/product-image.png";
 import pyramidImage from "@/assets/pyramid.png";
 import tubeImage from "@/assets/tube.png";
+import { motion, useScroll, useTransform } from "framer-motion";
+
 function ProductShowCase() {
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start end", "end start"],
+  });
+
+  const translateY = useTransform(scrollYProgress, [0, 1], [-150, 150]);
   return (
-    <section className="bg-gradient-to-b from-[#fff] to-[#d2dcff] py-24 overflow-x-hidden">
+    <section
+      className="bg-gradient-to-b from-[#fff] to-[#d2dcff] py-24 overflow-x-hidden"
+      ref={ref}
+    >
       <div className="container mx-auto">
         <div className="max-w-[540px] mx-auto">
           <div className="flex justify-center">
@@ -22,19 +35,21 @@ function ProductShowCase() {
         </div>
 
         <div className="relative">
-          <Image
-            src={pyramidImage}
+          <motion.img
+            src={pyramidImage.src}
             alt="pramid"
             className="hidden md:block absolute -top-32 -right-36 "
             height={262}
             width={262}
-          />{" "}
-          <Image
-            src={tubeImage}
+            style={{ translateY }}
+          />
+          <motion.img
+            src={tubeImage.src}
             alt="pramid"
             className="hidden md:block absolute bottom-24 -left-36 "
             height={262}
             width={262}
+            style={{ translateY }}
           />
           <Image
             src={productImage}
